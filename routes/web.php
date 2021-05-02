@@ -2,6 +2,7 @@
 
 use App\Http\Livewire\Post\Show;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,3 +25,4 @@ Route::group(['prefix' => 'admin'], function () {
 });
 
 Route::get('/test',Show::class);
+Route::get('/pay', [OderController::class,'store']);
