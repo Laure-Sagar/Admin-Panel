@@ -63,6 +63,12 @@ class Show extends Component
     public function updatedFooBar($value)
     {
         $this->text = "updatedFooBar Called";
+
+    }
+
+    public function submitfrom()
+    {
+        return redirect()->to('/pay');
     }
 
     public function render()

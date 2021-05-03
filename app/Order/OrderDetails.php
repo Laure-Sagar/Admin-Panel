@@ -7,6 +7,10 @@ use App\Billing\PaymentGateway;
 
 class OrderDetails
 {
+    /**
+     * @var PaymentGateway
+     */
+
     public function __construct(PaymentGateway $paymentGateway)
     {
         $this->paymentGateway = $paymentGateway;

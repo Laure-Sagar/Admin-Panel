@@ -1,33 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    {{-- <style>
-        ul{
-            text-decoration: none;
-        }
-        li{
-            text-decoration:none;
-            list-style:none;
-            float:left;
-            padding:1em;
-        }
-        a{
-            text-decoration:none;
-        }
-    </style> --}}
-</head>
-<body>
-    <div class="nav">
-       {{menu('Home','bootstrap')}}
+@extends('layouts.app')
+@section('title','Home')
+
+@section('content')
+    <div class="p-6 max-w-sm mx-auto dark:bg-gray-800 rounded-xl shadow-md flex items-center space-x-4">
+        <div class="flex-shrink-0">
+            <img class="h-12 w-12" src="https://d29fhpw069ctt2.cloudfront.net/icon/image/37750/preview.svg" alt="ChitChat Logo">
+        </div>
+        <div>
+            <div class="text-xl font-medium text-black dark:text-white" >ChitChat</div>
+            <p class="text-gray-500">You have a new message!</p>
+        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
-    </script>
-</body>
-</html>
+
+@endsection
